@@ -73,6 +73,7 @@ sc.close();
             for(int j=0;j<C;j++){
                 result.add(matrix[i][j]);
             }
+            
         }
                Collections.sort(result);
                return result.get((R*C)/2);
