@@ -37,7 +37,6 @@ Constraints:
 
  import java.util.*;
 
-import javax.swing.plaf.synth.SynthEditorPaneUI;
 public class rotate_matrix_90 {
     
     public static void main(String args[]){
