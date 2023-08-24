@@ -44,10 +44,11 @@ nums is an ascending array that is possibly rotated.
 
 package sorting;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class search_roated_sorted_array {
-    
+ 
     public static void main(String args[]){
      Scanner sc=new Scanner(System.in);
      System.out.println("Enter the size of array");
@@ -82,8 +83,10 @@ public class search_roated_sorted_array {
         return -1;
     }
 
-    //using binary seacrch technqieu - O(nLogn)
-    public static int binary_search_rotated(int arr[],int target,int n){
+    //using binary seacrch technqieu - O(Logn)
+    public static int binary_search_rotated(int arr[],int target,int n)
+    { 
+    
         // int n=arr.length();
        int low=0,high=arr.length-1;
          while(low<=high){
@@ -92,7 +95,7 @@ public class search_roated_sorted_array {
             if(arr[mid]==target){
                 return mid;
             }
-
+        
             if (arr[mid] >= arr[low]) { // Left half is sorted
                 if (target >= arr[low] && target < arr[mid]) {
                     high = mid - 1;
@@ -109,4 +112,6 @@ public class search_roated_sorted_array {
          }
          return -1;
     }
+
+
 }
