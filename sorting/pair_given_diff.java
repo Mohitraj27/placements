@@ -33,6 +33,8 @@ Constraints:
  */
 package sorting;
 
+import java.util.HashSet;
+
 public class pair_given_diff {
     public static void main(String args[]){
         int n=78;
@@ -42,6 +44,7 @@ public class pair_given_diff {
          System.out.println(result);
 
     }
+    // Time -O(N^2)
    public static  boolean  pair_diff(int arr[],int size,int n){
         
         for(int i=0;i<size-1;i++){
@@ -54,4 +57,18 @@ public class pair_given_diff {
         }
         return false;
     }
+
+//Optimzed code Time - O(N)
+
+// public static boolean boolean_pair(int arr[],int size,int n){
+    // HashSet<Integer> result=new HashSet<>();
+
+    // for(int i=0;i<size;i++){
+    //     if(result.contains(arr[i]-n) || result.contains(arr[i]+n));
+    //     {
+    //         return true;
+    //     }
+    // }
+    //  return false;
+// }
 }
