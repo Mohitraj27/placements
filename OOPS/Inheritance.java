@@ -5,6 +5,13 @@
 
  Super class is the parent class  whose features are inherited also known as base class 
 
+ types of Inheritance 
+ 1. Single Level Inheritance 
+ 2. Mutiple level Inheritance
+ 3. Heirachy level Inheritance
+ 4. Multiple Inheritance (Interface) cause it is not supported by Java
+ 5. Hybrid Inheritance - Not Supported by Java
+
  Eg. all properties of a father is inherited by a son
  */
 package OOPS;
