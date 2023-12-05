@@ -35,6 +35,7 @@ public class merge_sort
             
             //sorting using recursion for first half of array
             sort(arr, l, m);
+            
             //sorting using recursion for second half of array
             sort(arr, m+1, r);
 
